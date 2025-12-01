@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Details – Charmify</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #F9F5F0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        /* MAIN LAYOUT: LEFT IMAGE + RIGHT INFO */
+        .main-section {
+            display: flex;
+            gap: 40px;
+        }
+
+        /* BIG IMAGE */
+        .big-image {
+            width: 450px;
+            height: 450px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        /* THUMBNAILS */
+        .thumbs {
+            display: flex;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .thumbs img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .thumbs img:hover {
+            border-color: #E29578;
+        }
+
+        /* RIGHT SIDE INFO */
+        .info h2 {
+            font-size: 28px;
+            margin: 0 0 15px;
+        }
+
+        .price {
+            font-size: 22px;
+            color: #E29578;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .stock {
+            color: green;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        /* BUTTONS */
+        .actions {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            border: none;
+            background: #E29578;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: #d47d63;
+        }
+
+        .wishlist {
+            background: #444;
+        }
+
+        /* RELATED PRODUCTS */
+        .related {
+            margin-top: 50px;
+        }
+
+        .related h3 {
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .r-card {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .r-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .r-card .name {
+            font-weight: bold;
+            margin: 8px 0 5px;
+        }
+
+        .r-card .price {
+            color: #E29578;
+        }
+
+        /* QUANTITY SELECTOR */
+        .qty-box {
+            margin-top: 10px;
+        }
+
+        input[type="number"] {
+            width: 80px;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="main-section">
+
+            <!-- LEFT IMAGES -->
+            <div>
+                <img src="../ai-images/bracelet1.jpg" class="big-image">
+
+                <div class="thumbs">
+                    <img src="../ai-images/bracelet1.jpg">
+                    <img src="../ai-images/bracelet2.jpg">
+                    <img src="../ai-images/bracelet3.jpg">
+                </div>
+            </div>
+
+            <!-- RIGHT INFO -->
+            <div class="info">
+                <h2>Custom Beaded Bracelet</h2>
+
+                <div class="price">Rs 1200</div>
+                <div class="rating">⭐ 4.8 (230 reviews)</div>
+                <div class="stock">In Stock</div>
+
+                <div class="description">
+                    This customizable beaded bracelet is handmade with premium beads.
+                    Choose your bead colors, charm style, and add your initials for a
+                    personalized look. Perfect for gifts or your own unique aesthetic.
+                </div>
+
+                <div class="qty-box">
+                    <label>Quantity:</label>
+                    <input type="number" value="1" min="1">
+                </div>
+
+                <div class="actions">
+                    <button class="btn">Add to Cart</button>
+                    <button class="btn wishlist">Wishlist</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RELATED PRODUCTS -->
+        <div class="related">
+            <h3>Related Products</h3>
+
+            <div class="related-grid">
+
+                <div class="r-card">
+                    <img src="../ai-images/charm1.jpg">
+                    <div class="name">Heart Charm</div>
+                    <div class="price">Rs 600</div>
+                </div>
+
+                <div class="r-card">
+                    <img src="../ai-images/bracelet2.jpg">
+                    <div class="name">Name Bracelet</div>
+                    <div class="price">Rs 1100</div>
+                </div>
+
+                <div class="r-card">
+                    <img src="../ai-images/charm3.jpg">
+                    <div class="name">Moon Charm</div>
+                    <div class="price">Rs 580</div>
+                </div>
+
+                <div class="r-card">
+                    <img src="../ai-images/necklace1.jpg">
+                    <div class="name">Pearl Necklace</div>
+                    <div class="price">Rs 1500</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
