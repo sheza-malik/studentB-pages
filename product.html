@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products – Charmify</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #F9F5F0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Page Container */
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 30px 0;
+        }
+
+        /* Heading */
+        h1 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333;
+        }
+
+        /* FILTER/SORT BAR */
+        .filters {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        select {
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #D0D0D0;
+        }
+
+        /* PRODUCT GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .name {
+            font-size: 17px;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .price {
+            color: #E29578;
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            background: #E29578;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background: #d47d63;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Our Jewelry</h1>
+
+        <!-- FILTER & SORT -->
+        <div class="filters">
+            <select>
+                <option>Filter by Type</option>
+                <option>Bracelets</option>
+                <option>Necklaces</option>
+                <option>Charms</option>
+            </select>
+
+            <select>
+                <option>Sort by Price</option>
+                <option>Low to High</option>
+                <option>High to Low</option>
+            </select>
+        </div>
+
+        <!-- PRODUCT GRID -->
+        <div class="grid">
+
+            <!-- Repeat card for 8 products -->
+            <div class="card">
+                <img src="../ai-images/bracelet1.jpg">
+                <div class="name">Beaded Bracelet</div>
+                <div class="price">Rs 950</div>
+                <div class="rating">⭐ 4.7</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="../ai-images/bracelet2.jpg">
+                <div class="name">Custom Name Bracelet</div>
+                <div class="price">Rs 1200</div>
+                <div class="rating">⭐ 4.9</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="../ai-images/necklace1.jpg">
+                <div class="name">Pearl Necklace</div>
+                <div class="price">Rs 1500</div>
+                <div class="rating">⭐ 4.5</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="../ai-images/charm1.jpg">
+                <div class="name">Heart Charm</div>
+                <div class="price">Rs 600</div>
+                <div class="rating">⭐ 4.4</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="../ai-images/charm2.jpg">
+                <div class="name">Star Charm</div>
+                <div class="price">Rs 550</div>
+                <div class="rating">⭐ 4.6</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="../ai-images/necklace2.jpg">
+                <div class="name">Initial Necklace</div>
+                <div class="price">Rs 1700</div>
+                <div class="rating">⭐ 4.8</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="../ai-images/bracelet3.jpg">
+                <div class="name">Minimal Bracelet</div>
+                <div class="price">Rs 900</div>
+                <div class="rating">⭐ 4.3</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="../ai-images/charm3.jpg">
+                <div class="name">Moon Charm</div>
+                <div class="price">Rs 580</div>
+                <div class="rating">⭐ 4.7</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+        </div> <!-- grid end -->
+
+    </div> <!-- container end -->
+
+</body>
+</html>
